@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Dash</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <a class="sidebar__logo logo" href="/">
+            <img src="assets/svg/logo.svg" alt="dashboard" />
+          </a>
+
+          <button class="close">
+            <img src="assets/svg/close.svg" alt="menu" />
+          </button>
+        </div>
+        <nav>
+          <ul class="sidebar__options options">
+            <li class="options__el option">
+              <button class="option__content">
+                <img
+                  class="option__icon"
+                  src="assets/svg/sidebar/dashboard.svg"
+                  alt="dashboard"
+                />
+                <span class="option__text">Dashboard</span>
+              </button>
+            </li>
+            <li class="options__el option">
+              <button class="option__content">
+                <img
+                  class="option__icon"
+                  src="assets/svg/sidebar/transactions.svg"
+                  alt="transactions"
+                />
+                <span class="option__text">Transactions</span>
+              </button>
+            </li>
+            <li class="options__el option">
+              <button class="option__content">
+                <img
+                  class="option__icon"
+                  src="assets/svg/sidebar/accounts.svg"
+                  alt="accounts"
+                />
+                <span class="option__text">Accounts</span>
+              </button>
+            </li>
+            <li class="options__el option">
+              <button class="option__content">
+                <img
+                  class="option__icon"
+                  src="assets/svg/sidebar/investments.svg"
+                  alt="investments"
+                />
+                <span class="option__text">Investments</span>
+              </button>
+            </li>
+            <li class="options__el option">
+              <button class="option__content">
+                <img
+                  class="option__icon"
+                  src="assets/svg/sidebar/credit_cards.svg"
+                  alt="credit_cards"
+                />
+                <span class="option__text">Credit Cards</span>
+              </button>
+            </li>
+            <li class="options__el option">
+              <button class="option__content">
+                <img
+                  class="option__icon"
+                  src="assets/svg/sidebar/loans.svg"
+                  alt="credit_cards"
+                />
+                <span class="option__text">Loans</span>
+              </button>
+            </li>
+            <li class="options__el option">
+              <button class="option__content">
+                <img
+                  class="option__icon"
+                  src="assets/svg/sidebar/services.svg"
+                  alt="services"
+                />
+                <span class="option__text">Services</span>
+              </button>
+            </li>
+            <li class="options__el option">
+              <button class="option__content">
+                <img
+                  class="option__icon"
+                  src="assets/svg/sidebar/my_privileges.svg"
+                  alt="my_privileges"
+                />
+                <span class="option__text">My Privileges</span>
+              </button>
+            </li>
+            <li class="options__el option active">
+              <button class="option__content">
+                <img
+                  class="option__icon"
+                  src="assets/svg/sidebar/settings.svg"
+                  alt="settings"
+                />
+                <span class="option__text">Setting</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="content">
+        <header>
+          <div class="container-size header">
+            <button class="burger">
+              <img src="assets/svg/burger.svg" alt="menu" />
+            </button>
+            <h1>Setting</h1>
+            <div class="header__input">
+              <input type="text" placeholder="Search for something" />
+            </div>
+            <div class="header__content">
+              <button class="header__setting header-button">
+                <img src="assets/svg/settings.svg" alt="settings" />
+              </button>
+              <button class="header__notifications header-button">
+                <img src="assets/svg/bell.svg" alt="notifications" />
+              </button>
+              <button class="header__user">
+                <img src="assets/images/user.jpg" alt="user" />
+              </button>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="container-size">
+            <div class="main__content">
+              <div class="main__menu menu">
+                <ul class="menu__content">
+                  <li class="menu__el active"><button>Edit Profile</button></li>
+                  <li class="menu__el"><button>Preferences</button></li>
+                  <li class="menu__el"><button>Security</button></li>
+                </ul>
+              </div>
+              <form class="main__form form">
+                <div class="form__content">
+                  <div class="form__image form-image">
+                    <div class="form__image form-image__content">
+                      <img
+                        class="image-profile"
+                        src="assets/images/user_bigger.jpg"
+                        alt="user"
+                      />
+                    </div>
+                    <button class="form-image__edit">
+                      <img src="assets/svg/edit.svg" />
+                    </button>
+                  </div>
+                  <div class="form__inputs form-inputs">
+                    <ul class="form-inputs__el">
+                      <li>
+                        <label for="name">Your Name</label
+                        ><input id="name" type="text" value="Charlene Reed" />
+                      </li>
+                      <li>
+                        <label for="username">User Name</label
+                        ><input
+                          id="username"
+                          type="text"
+                          value="Charlene Reed"
+                        />
+                      </li>
+                      <li>
+                        <label for="email">Email</label
+                        ><input
+                          id="email"
+                          type="email"
+                          value="charlenereed@gmail.com"
+                        />
+                      </li>
+                      <li>
+                        <label for="password">Password</label
+                        ><input
+                          id="password"
+                          type="password"
+                          placeholder="**********"
+                        />
+                      </li>
+                      <li>
+                        <label for="date_of_birth">Date of Birth</label>
+                        <div class="form-inputs__select">
+                          <select name="date_of_birth" id="date_of_birth">
+                            <option value="January" selected>
+                              25 January 1990
+                            </option>
+                            <option value="June">25 June 1990</option>
+                            <option value="July 2">25 July 1990</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li>
+                        <label for="present_address">Present Address</label
+                        ><input
+                          id="present_address"
+                          type="text"
+                          value="San Jose, California, USA"
+                        />
+                      </li>
+                      <li>
+                        <label for="permanent_address">Permanent Address</label
+                        ><input
+                          id="permanent_address"
+                          type="text"
+                          value="San Jose, California, USA"
+                        />
+                      </li>
+                      <li>
+                        <label for="city">City</label
+                        ><input id="city" type="text" value="San Jose" />
+                      </li>
+                      <li>
+                        <label for="code">Postal Code</label>
+                        <input id="code" type="number" value="45962" />
+                      </li>
+                      <li>
+                        <label for="country">Country</label
+                        ><input id="country" type="text" value="USA" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button class="form__button" type="submit">Save</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+  <script src="assets/script.js"></script>
+</html>
